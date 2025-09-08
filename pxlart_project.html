@@ -3,8 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popular .pxlart Projects - PixelCraft</title>
+    <title>Popular .pxlflux Projects - PixelFlux</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const projects = [
+            {
+                title: "pikachu",
+                type: "image",
+                downloadUrl: "pikachu.pxlflux",
+                borderColor: "cyan-400",
+                textColor: "cyan-400"
+            },
+            {
+                title: "happy_man",
+                type: "video",
+                downloadUrl: "happy_man.pxlflux",
+                borderColor: "pink-400",
+                textColor: "pink-400"
+            },
+            {
+                title: "carrot",
+                type: "image",
+                downloadUrl: "carrot.webp",
+                borderColor: "green-400",
+                textColor: "green-400"
+            },
+            {
+                title: "cherry",
+                type: "image",
+                downloadUrl: "cherry.webp",
+                borderColor: "yellow-400",
+                textColor: "yellow-400"
+            },
+            {
+                title: "chicken",
+                type: "image",
+                downloadUrl: "chicken.webp",
+                borderColor: "red-400",
+                textColor: "red-400"
+            },
+            {
+                title: "pikachu",
+                type: "image",
+                downloadUrl: "pikachu.webp",
+                borderColor: "blue-400",
+                textColor: "blue-400"
+            },
+            {
+                title: "pringles",
+                type: "image",
+                downloadUrl: "pringles.webp",
+                borderColor: "purple-400",
+                textColor: "purple-400"
+            }
+        ];
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
         
@@ -126,16 +179,6 @@
         .download-btn:active {
             animation: downloadPulse 0.3s ease;
         }
-        
-        .stats-badge {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: rgba(0,0,0,0.8);
-            padding: 4px 8px;
-            font-size: 8px;
-            border-radius: 2px;
-        }
     </style>
 </head>
 <body class="bg-black text-green-400 min-h-screen overflow-x-hidden relative">
@@ -154,7 +197,7 @@
                     <span>BACK</span>
                 </a>
             </div>
-            <h1 class="text-xl text-pink-400 glitch">.PXLART STORE</h1>
+            <h1 class="text-xl text-pink-400 glitch">.pxlflux STORE</h1>
             <div class="flex items-center space-x-4">
                 <a href="ai_project.html" class="hover:text-cyan-400 transition-colors">AI GALLERY</a>
             </div>
@@ -169,11 +212,11 @@
                 >>> POPULAR PROJECTS <<<
             </h1>
             <h2 class="text-2xl md:text-3xl text-cyan-400 mb-6">
-                .PXLART DOWNLOADS
+                .pxlflux DOWNLOADS
             </h2>
             <p class="text-sm text-green-300 max-w-2xl mx-auto">
                 Download professional pixel art projects created by the community. 
-                Open them directly in PixelCraft app and learn from the masters!
+                Open them directly in PixelFlux app and learn from the masters!
             </p>
             <div class="text-xs mt-4">
                 <span class="blink text-yellow-400">📁</span> 
@@ -182,316 +225,22 @@
             </div>
         </section>
 
-        <!-- Filter/Sort Bar -->
-        <section class="mb-12">
-            <div class="flex flex-wrap justify-center gap-4 text-xs">
-                <button class="bg-cyan-600 text-black px-4 py-2 pixel-border border-cyan-400 pixel-shadow">ALL</button>
-                <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 pixel-border border-gray-500">CHARACTERS</button>
-                <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 pixel-border border-gray-500">ENVIRONMENTS</button>
-                <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 pixel-border border-gray-500">ANIMATIONS</button>
-                <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 pixel-border border-gray-500">UI ELEMENTS</button>
-            </div>
-        </section>
-
         <!-- Projects Grid -->
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            
-            <!-- Project 1 -->
-            <div class="project-card bg-gray-900 pixel-border border-cyan-400 pixel-shadow hover:pixel-glow hover:border-cyan-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_1.webp" alt="Knight Hero" class="w-full h-full object-cover">
-                    <div class="stats-badge text-cyan-400">
-                        ⭐ 4.8 • 1.2K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-cyan-400 mb-2">KNIGHT_HERO.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Animated knight character with 8 frames. Perfect for RPG games.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">32x32 • 8 FRAMES</span>
-                        <span class="text-pink-400">2.1 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card bg-gray-900 pixel-border border-pink-400 pixel-shadow hover:pixel-glow hover:border-pink-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_2.webp" alt="Space Ship" class="w-full h-full object-cover">
-                    <div class="stats-badge text-pink-400">
-                        ⭐ 4.9 • 2.1K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-pink-400 mb-2">SPACESHIP_SET.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Complete spaceship with thrust animation and variants.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">64x64 • 12 FRAMES</span>
-                        <span class="text-pink-400">3.4 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card bg-gray-900 pixel-border border-green-400 pixel-shadow hover:pixel-glow hover:border-green-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_3.webp" alt="Forest Scene" class="w-full h-full object-cover">
-                    <div class="stats-badge text-green-400">
-                        ⭐ 4.7 • 890
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-green-400 mb-2">FOREST_TILESET.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Complete forest environment with trees, grass, and rocks.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">16x16 • 24 TILES</span>
-                        <span class="text-pink-400">1.8 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card bg-gray-900 pixel-border border-yellow-400 pixel-shadow hover:pixel-glow hover:border-yellow-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_4.webp" alt="Wizard Character" class="w-full h-full object-cover">
-                    <div class="stats-badge text-yellow-400">
-                        ⭐ 4.6 • 1.5K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-yellow-400 mb-2">WIZARD_MAGE.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Magical wizard with spell casting animation sequence.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">48x48 • 16 FRAMES</span>
-                        <span class="text-pink-400">4.2 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card bg-gray-900 pixel-border border-red-400 pixel-shadow hover:pixel-glow hover:border-red-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_5.webp" alt="UI Elements" class="w-full h-full object-cover">
-                    <div class="stats-badge text-red-400">
-                        ⭐ 4.9 • 3.2K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-red-400 mb-2">GAME_UI_KIT.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Complete UI kit with buttons, panels, and icons.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">VARIOUS • 50+ ITEMS</span>
-                        <span class="text-pink-400">5.1 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card bg-gray-900 pixel-border border-blue-400 pixel-shadow hover:pixel-glow hover:border-blue-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_6.webp" alt="Platformer Hero" class="w-full h-full object-cover">
-                    <div class="stats-badge text-blue-400">
-                        ⭐ 4.8 • 1.8K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-blue-400 mb-2">PLATFORM_HERO.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Classic platformer character with run, jump, idle animations.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">32x32 • 20 FRAMES</span>
-                        <span class="text-pink-400">3.1 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="project-card bg-gray-900 pixel-border border-purple-400 pixel-shadow hover:pixel-glow hover:border-purple-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_7.webp" alt="Cyberpunk City" class="w-full h-full object-cover">
-                    <div class="stats-badge text-purple-400">
-                        ⭐ 4.7 • 1.1K
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-purple-400 mb-2">CYBER_CITY.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Futuristic cyberpunk cityscape with neon lights.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">128x64 • STATIC</span>
-                        <span class="text-pink-400">2.9 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="project-card bg-gray-900 pixel-border border-orange-400 pixel-shadow hover:pixel-glow hover:border-orange-300">
-                <div class="relative aspect-square bg-gray-800 overflow-hidden">
-                    <img src="pxl_8.webp" alt="Food Icons" class="w-full h-full object-cover">
-                    <div class="stats-badge text-orange-400">
-                        ⭐ 4.5 • 760
-                    </div>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-sm text-orange-400 mb-2">FOOD_ICONS.PXLART</h3>
-                    <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                        Delicious food icons pack for restaurant games.
-                    </p>
-                    <div class="flex justify-between items-center text-xs mb-3">
-                        <span class="text-yellow-400">16x16 • 30 ICONS</span>
-                        <span class="text-pink-400">1.2 MB</span>
-                    </div>
-                    <button class="download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs">
-                        DOWNLOAD .PXLART
-                    </button>
-                </div>
-            </div>
-
+        <section id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         </section>
 
-        <!-- Popular This Week Section -->
-        <section class="mt-20">
-            <h2 class="text-2xl text-center text-cyan-400 mb-12">
-                >>> TRENDING THIS WEEK <<<
+        <!-- Upload Your Project -->
+        <section class="text-center mt-20">
+            <h2 class="text-2xl md:text-3xl text-pink-400 mb-4">
+                >>> UPLOAD YOUR OWN PROJECT! <<<
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Trending 1 -->
-                <div class="project-card bg-gray-900 pixel-border border-gold-400 pixel-shadow hover:pixel-glow">
-                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
-                        <img src="trend_1.webp" alt="Dragon Boss" class="w-full h-full object-cover">
-                        <div class="absolute top-2 left-2 bg-yellow-500 text-black px-2 py-1 text-xs pixel-border border-yellow-600">
-                            🔥 HOT
-                        </div>
-                        <div class="stats-badge text-yellow-400">
-                            ⭐ 5.0 • 4.5K
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-sm text-yellow-400 mb-2">DRAGON_BOSS_BATTLE.PXLART</h3>
-                        <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                            Epic dragon boss with fire breathing animation and multiple phases.
-                        </p>
-                        <div class="flex justify-between items-center text-xs mb-3">
-                            <span class="text-yellow-400">128x128 • 32 FRAMES</span>
-                            <span class="text-pink-400">8.7 MB</span>
-                        </div>
-                        <button class="download-btn bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-2 px-4 pixel-border border-yellow-400 w-full text-xs">
-                            DOWNLOAD .PXLART
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Trending 2 -->
-                <div class="project-card bg-gray-900 pixel-border border-gold-400 pixel-shadow hover:pixel-glow">
-                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
-                        <img src="trend_2.webp" alt="Retro Car Collection" class="w-full h-full object-cover">
-                        <div class="absolute top-2 left-2 bg-yellow-500 text-black px-2 py-1 text-xs pixel-border border-yellow-600">
-                            🔥 HOT
-                        </div>
-                        <div class="stats-badge text-yellow-400">
-                            ⭐ 4.9 • 3.8K
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-sm text-yellow-400 mb-2">RETRO_CARS_PACK.PXLART</h3>
-                        <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                            Collection of 15 classic cars with wheel animations.
-                        </p>
-                        <div class="flex justify-between items-center text-xs mb-3">
-                            <span class="text-yellow-400">64x32 • 15 CARS</span>
-                            <span class="text-pink-400">6.2 MB</span>
-                        </div>
-                        <button class="download-btn bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-2 px-4 pixel-border border-yellow-400 w-full text-xs">
-                            DOWNLOAD .PXLART
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Trending 3 -->
-                <div class="project-card bg-gray-900 pixel-border border-gold-400 pixel-shadow hover:pixel-glow">
-                    <div class="relative aspect-video bg-gray-800 overflow-hidden">
-                        <img src="trend_3.webp" alt="Animated Waterfall" class="w-full h-full object-cover">
-                        <div class="absolute top-2 left-2 bg-yellow-500 text-black px-2 py-1 text-xs pixel-border border-yellow-600">
-                            🔥 HOT
-                        </div>
-                        <div class="stats-badge text-yellow-400">
-                            ⭐ 4.8 • 2.9K
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-sm text-yellow-400 mb-2">ANIMATED_WATERFALL.PXLART</h3>
-                        <p class="text-xs text-green-300 mb-3 leading-relaxed">
-                            Beautiful cascading waterfall with flowing water animation.
-                        </p>
-                        <div class="flex justify-between items-center text-xs mb-3">
-                            <span class="text-yellow-400">96x128 • 24 FRAMES</span>
-                            <span class="text-pink-400">7.1 MB</span>
-                        </div>
-                        <button class="download-btn bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-2 px-4 pixel-border border-yellow-400 w-full text-xs">
-                            DOWNLOAD .PXLART
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Load More Button -->
-        <div class="text-center mt-16">
-            <button class="bg-pink-600 hover:bg-pink-500 text-white font-bold py-4 px-8 pixel-border border-pink-400 pixel-shadow hover:pixel-glow">
-                LOAD MORE PROJECTS
-            </button>
-            <div class="text-xs mt-4 text-green-300">
-                <span class="blink">◆</span> 
-                NEW .PXLART FILES UPLOADED WEEKLY 
-                <span class="blink">◆</span>
-            </div>
-        </div>
-
-        <!-- Upload Your Own Section -->
-        <section class="mt-20 text-center bg-gray-900 pixel-border border-cyan-400 p-8 pixel-shadow">
-            <h2 class="text-2xl text-cyan-400 mb-4">SHARE YOUR CREATIONS</h2>
-            <p class="text-sm text-green-300 mb-6 max-w-2xl mx-auto">
-                Created something amazing? Upload your .pxlart files and share them with the community!
-                Get featured and earn recognition from fellow pixel artists.
+            <p class="text-sm text-green-300 max-w-2xl mx-auto mb-6">
+                Share your pixel art projects with the PixelFlux community! 
+                Submit your .pxlflux files for a chance to be featured in our store.
             </p>
-            <button class="bg-cyan-600 hover:bg-cyan-500 text-black font-bold py-3 px-6 pixel-border border-cyan-400 pixel-shadow">
-                UPLOAD PROJECT
-            </button>
+            <a href="mailto:codecerebrum@gmail.com?subject=Upload%20your%20.pxlflux%20to%20community&body=please%20make%20sure%20you%20attached%20.pxlflux%20with%20this%20email%20as%20attachments%0Afill%20below%20form%20to%20show%20in%20community%20feed.%20Leave%20blank%20if%20you%20don't%20wish%20to%20showcase%20about%20you%0AName:%20%3Cyourname%3E%0ASocial%20link:%20%3Ceg:instagram%3E" class="inline-block bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400">
+                SUBMIT PROJECT
+            </a>
         </section>
     </main>
 
@@ -499,24 +248,62 @@
     <footer class="relative z-10 border-t border-green-400 mt-20">
         <div class="max-w-6xl mx-auto px-4 py-8 text-center">
             <div class="text-xs">
-                © 2025 PIXELCRAFT .PXLART STORE • ALL RIGHTS RESERVED
+                © 2025 PIXELFLUX .pxlflux STORE • ALL RIGHTS RESERVED
             </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Download button functionality
+            const projectsGrid = document.getElementById('projects-grid');
+
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = `project-card bg-gray-900 pixel-border border-${project.borderColor} pixel-shadow hover:pixel-glow hover:border-${project.borderColor.replace('400', '300')}`;
+
+                const mediaContainer = document.createElement('div');
+                mediaContainer.className = 'relative aspect-square bg-gray-800 overflow-hidden';
+
+                const mediaElement = document.createElement('img');
+                mediaElement.src = `images/pxlflux/${project.title}.webp`;
+                mediaElement.className = 'w-full h-full object-cover';
+                mediaElement.alt = project.title;
+
+                const typeLabel = document.createElement('div');
+                typeLabel.className = `absolute top-2 right-2 bg-${project.type === 'image' ? 'yellow-500' : 'red-500'} text-black px-2 py-1 text-xs pixel-border border-${project.type === 'image' ? 'yellow-600' : 'red-600'}`;
+                typeLabel.textContent = project.type.toUpperCase();
+
+                mediaContainer.appendChild(mediaElement);
+                mediaContainer.appendChild(typeLabel);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'p-4';
+
+                const title = document.createElement('h3');
+                title.className = `text-sm text-${project.textColor} mb-4`;
+                title.textContent = project.title;
+
+                const downloadBtn = document.createElement('a');
+                downloadBtn.href = `pxlflux/${project.downloadUrl}`;
+                downloadBtn.className = 'download-btn bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 pixel-border border-green-400 w-full text-xs';
+                downloadBtn.textContent = 'DOWNLOAD .pxlflux';
+
+                contentDiv.appendChild(title);
+                contentDiv.appendChild(downloadBtn);
+                projectCard.appendChild(mediaContainer);
+                projectCard.appendChild(contentDiv);
+                projectsGrid.appendChild(projectCard);
+            });
+
+            // Download button visual feedback
             document.querySelectorAll('.download-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // Visual feedback
                     const originalText = this.textContent;
                     this.textContent = 'DOWNLOADING...';
                     this.style.backgroundColor = '#10b981';
                     this.style.transform = 'translate(4px, 4px)';
                     this.style.boxShadow = 'none';
                     
-                    // Simulate download process
                     setTimeout(() => {
                         this.textContent = 'DOWNLOADED!';
                         this.style.backgroundColor = '#059669';
@@ -530,20 +317,7 @@
                     }, 3000);
                 });
             });
-            
-            // Filter functionality
-            document.querySelectorAll('section:nth-of-type(2) button').forEach(filterBtn => {
-                filterBtn.addEventListener('click', function() {
-                    // Remove active state from all buttons
-                    document.querySelectorAll('section:nth-of-type(2) button').forEach(btn => {
-                        btn.className = 'bg-gray-700 hover:bg-gray-600 px-4 py-2 pixel-border border-gray-500';
-                    });
-                    
-                    // Add active state to clicked button
-                    this.className = 'bg-cyan-600 text-black px-4 py-2 pixel-border border-cyan-400 pixel-shadow';
-                });
-            });
-            
+
             // Add hover effects to project cards
             document.querySelectorAll('.project-card').forEach(card => {
                 card.addEventListener('mouseenter', function() {
@@ -554,20 +328,6 @@
                     this.style.transform = '';
                 });
             });
-
-            // Random stats animation
-            function animateStats() {
-                document.querySelectorAll('.stats-badge').forEach(badge => {
-                    const currentText = badge.textContent;
-                    badge.style.animation = 'blink 0.5s ease-in-out';
-                    setTimeout(() => {
-                        badge.style.animation = '';
-                    }, 500);
-                });
-            }
-            
-            // Animate stats every 10 seconds
-            setInterval(animateStats, 10000);
         });
     </script>
 </body>
