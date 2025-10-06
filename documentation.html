@@ -150,7 +150,7 @@
         <nav class="container mx-auto px-6 mb-8 z-20">
             <div class="flex justify-between items-center">
                 <div class="text-2xl md:text-2xl leading-tight">
-                <span class="text-retro-purple">Pixel</span><span class="text-retro-pink">Flux</span>
+                    <span class="text-retro-purple">Pixel</span><span class="text-retro-pink">Flux</span>
                 </div>
                 <div class="nav-links space-x-8 md:flex hidden">
                     <a href="index.html" class="hover:text-retro-pink transition-colors">Home</a>
@@ -175,61 +175,625 @@
         <!-- Page Title -->
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl mb-6 leading-tight">
-                <span class="text-retro-yellow">Documentation</span>
+                <span class="text-retro-yellow">User Guide</span>
             </h1>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Learn every tool in PixelFlux step by step. Screenshots highlight each numbered feature below.
+                A comprehensive guide to creating stunning pixel art and animations with PixelFlux.
             </p>
         </div>
     </header>
 
-    <!-- Main Editor Tools Section -->
+    <!-- Introduction Section -->
     <section class="py-20 bg-pixel-darker">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl text-center mb-16 text-retro-cyan">Main Editor Tools</h2>
+            <h2 class="text-4xl text-center mb-16 text-retro-cyan">🎨 Introduction</h2>
+            <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Welcome to <strong>PixelFlux</strong> - a powerful, feature-rich pixel art creation tool designed for both beginners and professional artists! Create stunning pixel art images and animations with an extensive toolkit that rivals professional desktop applications. Whether you're creating game sprites, digital art, or animated sequences, PixelFlux provides all the tools you need in a beautiful, intuitive interface.
+            </p>
+        </div>
+    </section>
+
+    <!-- View vs Edit Mode Section -->
+    <section class="py-20 bg-gradient-to-br from-pixel-dark to-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-green">🖱️ Understanding View vs Edit Mode</h2>
+            <h3 class="text-2xl mb-8 text-retro-pink">The Fundamental Concept</h3>
+            <p class="text-gray-300 mb-4">View Mode (👁️ Eye Icon) and Edit Mode are the two main states of the app that control how you interact with your canvas:</p>
             
             <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="pixel-border pixel-shadow rounded-lg overflow-hidden">
-                    <img src="images/screenshots/1.png" alt="Editor screenshot" class="w-full">
+                <div>
+                    <h4 class="text-xl text-retro-cyan mb-4">View Mode 👁️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Navigation and inspection only</li>
+                        <li><strong>Canvas Interaction</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Zoom</strong>: Pinch to zoom in/out or use scroll wheel</li>
+                                <li><strong>Pan</strong>: Drag to move around the canvas</li>
+                                <li><strong>No Editing</strong>: Cannot draw, erase, or modify pixels</li>
+                            </ul>
+                        </li>
+                        <li><strong>When to Use</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Reviewing your work from different angles</li>
+                                <li>Showing your artwork to others</li>
+                                <li>Taking screenshots without accidental edits</li>
+                                <li>Navigating large canvases</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <ol class="space-y-4 text-gray-300">
-                    <li class="flex"><span class="text-retro-purple mr-2">1.</span> <strong>Edit/View toggle</strong> – Switch between editing your canvas or viewing it without tools in the way.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">2.</span> <strong>Undo</strong> – Revert your last action instantly.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">3.</span> <strong>Redo</strong> – Restore the step you just undid.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">4.</span> <strong>Export options</strong> – Save your art as PNG, GIF, or PixelFlux’s native <code>.pxlflux</code> format.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">5.</span> <strong>Full Screen option</strong> – Focus completely on your work without distractions.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">6.</span> <strong>Set Bg color</strong> – Change background color for better contrast.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">7.</span> <strong>Color palettes</strong> – Switch or load palettes to speed up your workflow.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">8.</span> <strong>Selection tool</strong> – Select, move, or copy specific parts of your canvas.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">9.</span> <strong>Import pixels</strong> – Import an image or another project into your canvas.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">10.</span> <strong>Symmetry tool</strong> – Draw mirrored lines or patterns automatically.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">11.</span> <strong>Fill tool</strong> – Fill an area with a single color in one tap.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">12.</span> <strong>Eraser tool</strong> – Remove pixels with precision.</li>
-                    <li class="flex"><span class="text-retro-purple mr-2">13.</span> <strong>Add color to palette</strong> – Store your current color in the palette for reuse.</li>
-                </ol>
+                <div>
+                    <h4 class="text-xl text-retro-cyan mb-4">Edit Mode ✏️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Active creation and modification</li>
+                        <li><strong>Canvas Interaction</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>All Tools</strong>: Full access to drawing, selection, and editing tools</li>
+                                <li><strong>Limited Navigation</strong>: Basic pan and zoom available</li>
+                                <li><strong>Pixel Precision</strong>: Click or drag to place pixels</li>
+                            </ul>
+                        </li>
+                        <li><strong>When to Use</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>All drawing and editing activities</li>
+                                <li>Creating new artwork</li>
+                                <li>Making modifications to existing work</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="text-retro-yellow mt-4">💡 <strong>Pro Tip</strong>: Switch to View Mode when you want to examine your work without accidentally making changes, then toggle back to Edit Mode when you're ready to continue creating!</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Animation Tools Section -->
+    <!-- Complete Tool Guide Section -->
+    <section class="py-20 bg-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-cyan">🛠️ Complete Tool Guide</h2>
+            
+            <h3 class="text-2xl mb-8 text-retro-pink">Basic Drawing Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">1. Selection Tool 🟦</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Select and manipulate groups of pixels</li>
+                        <li><strong>Features</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Click and drag to create rectangular selections</li>
+                                <li>Move selected areas with arrow keys or drag</li>
+                                <li>Transform selections (rotate, flip, scale)</li>
+                                <li>Copy/paste selections</li>
+                            </ul>
+                        </li>
+                        <li><strong>Selection Toolbar Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Move (up, down, left, right)</li>
+                                <li>Duplicate selection</li>
+                                <li>Delete selection</li>
+                                <li>Color selected pixels</li>
+                                <li>Rotate (clockwise/counter-clockwise)</li>
+                                <li>Flip (horizontal/vertical)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">2. Lasso Tool 🪃</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Free-form selection for irregular shapes</li>
+                        <li><strong>Features</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Draw custom selection boundaries</li>
+                                <li>Perfect for organic shapes and complex selections</li>
+                                <li>Automatically converts to regular selection when complete</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">3. Draw Tool ✏️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Basic pixel placement</li>
+                        <li><strong>Usage</strong>: Click to place individual pixels</li>
+                        <li><strong>Best For</strong>: Precise pixel work and details</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Advanced Brush Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">4. Brush Tool 🖌️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Customizable Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Brush Size</strong>: 1.0 to 10.0 pixels</li>
+                                <li><strong>Brush Shape</strong>: Circular, Square, Horizontal, Vertical, Diagonal, Cross, Custom</li>
+                                <li><strong>Spacing</strong>: Control distance between brush marks (1.0-5.0)</li>
+                                <li><strong>Scatter</strong>: Random position variation (0.0-1.0)</li>
+                                <li><strong>Aspect Ratio</strong>: Width/height ratio for custom shapes (0.1-5.0)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">5. Airbrush Tool 💨</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Soft, gradient painting with adjustable flow</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Blur Radius</strong>: Edge softness (0.0-1.0)</li>
+                                <li><strong>Flow Rate</strong>: Paint density control (0.0-1.0)</li>
+                                <li><strong>Hardness</strong>: Edge sharpness (0.0-1.0)</li>
+                                <li><strong>Shapes</strong>: Circular, Square, Horizontal, Vertical</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">6. Calligraphy Brush 🖋️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Artistic brush with pressure sensitivity simulation</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Nib Angle</strong>: 0-360 degrees for angled strokes</li>
+                                <li><strong>Nib Width/Height</strong>: 1-10 pixels</li>
+                                <li><strong>Pressure Curve</strong>: Soft, Medium, Hard</li>
+                                <li><strong>Taper Ends</strong>: Smooth stroke beginnings/endings</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">7. Spray Paint Tool 🔫</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Particle-based painting effect</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Density</strong>: 10-100% coverage</li>
+                                <li><strong>Radius</strong>: 1-20 pixel spray area</li>
+                                <li><strong>Particle Size</strong>: 1-5 pixels</li>
+                                <li><strong>Patterns</strong>: Circular, Square, Random</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">8. Dithering Tool 🔲</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Create texture and shading patterns</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Intensity</strong>: Spacing control (0.0-1.0)</li>
+                                <li><strong>Patterns</strong>: Dot, Checker, Horizontal/Vertical lines, Diagonal lines, Ordered 2x2/4x4, Cross pattern, Random noise</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Shape & Line Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">9. Line Tool 📏</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Draw straight lines between two points</li>
+                        <li><strong>Usage</strong>: Click start point, drag to end point</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">10. Shape Tool ⬛</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Available Shapes</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Rectangle (with corner radius 0-50px)</li>
+                                <li>Circle</li>
+                                <li>Triangle</li>
+                                <li>Polygon (3-12 sides)</li>
+                                <li>Star (3-12 points with inner ratio control)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Fill Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Solid fill</li>
+                                <li>Outline only</li>
+                                <li>Both fill and outline</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">11. Arrow Tool 🏹</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Create arrows with customizable heads and tails</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Thickness</strong>: 1.0-5.0 pixels</li>
+                                <li><strong>Head Designs</strong>: Triangle, Line, Circle, Diamond, Square, Barbed, Curved, Hollow</li>
+                                <li><strong>Tail Designs</strong>: None, Line, Circle, Square, Feather, Diamond</li>
+                                <li><strong>Fill Options</strong>: Solid or outline heads/tails</li>
+                                <li><strong>Sizing</strong>: Separate controls for head and tail size</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Editing & Adjustment Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">12. Eraser Tool 🧼</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Remove pixels from current layer</li>
+                        <li><strong>Toggle</strong>: Switch between draw and erase modes</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">13. Fill Tool 🎨</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Fill bounded areas with color</li>
+                        <li><strong>Usage</strong>: Click inside area to fill</li>
+                        <li><strong>Smart Detection</strong>: Only fills enclosed areas to prevent overflow</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">14. Smudge Tool 👆</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Blend and smear colors</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Strength</strong>: 10-100% effect intensity</li>
+                                <li><strong>Size</strong>: 1-20 pixel area</li>
+                                <li><strong>Wet/Dry Mix</strong>: 0-100% blending behavior</li>
+                                <li><strong>Shapes</strong>: Round, Square, Line</li>
+                                <li><strong>Sample All Layers</strong>: Blend from all visible layers</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">15. Blur Tool 🔍</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Soften and blur areas</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Intensity</strong>: 1-10 pixel blur radius</li>
+                                <li><strong>Sample Radius</strong>: 1-20 pixel sampling area</li>
+                                <li><strong>Types</strong>: Gaussian, Box, Motion blur</li>
+                                <li><strong>Shapes</strong>: Circular, Linear</li>
+                                <li><strong>Preserve Details</strong>: Maintain edge clarity</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">16. Alpha Tool 🌫️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Modify transparency and color properties</li>
+                        <li><strong>Modes</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Set/Increase/Decrease/Multiply Alpha: Transparency controls</li>
+                                <li>Brighten/Darken: Lightness adjustment</li>
+                                <li>Saturate/Desaturate: Color intensity</li>
+                            </ul>
+                        </li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Effect Value</strong>: 0-100% intensity</li>
+                                <li><strong>Radius</strong>: 1-10 pixel effect area</li>
+                                <li><strong>Target</strong>: Affect transparent/opaque pixels</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Special Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">17. Gradient Tool 🌈</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Create smooth color transitions</li>
+                        <li><strong>Types</strong>: Linear, Radial, Angular</li>
+                        <li><strong>Directions</strong>: Horizontal, Vertical, Diagonal</li>
+                        <li><strong>Gradient Library</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Save and manage custom gradients</li>
+                                <li>Add/remove color stops (2-8 colors)</li>
+                                <li>Adjust transition smoothness (1-10)</li>
+                                <li>Duplicate and rename gradients</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">18. Color Picker Tool 👆</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Sample colors from your artwork</li>
+                        <li><strong>Usage</strong>: Click anywhere on canvas to select color</li>
+                        <li><strong>Auto-adds</strong>: Sampled colors to your palette</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">19. Reference Image Tool 🖼️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Use reference images as drawing guides</li>
+                        <li><strong>Features</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Import images from device</li>
+                                <li>Adjust opacity (0-100%)</li>
+                                <li>Scale and rotate</li>
+                                <li>Position anywhere on canvas</li>
+                                <li>Blend modes (Multiply, Screen, Overlay, etc.)</li>
+                                <li>Brightness/contrast adjustment</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">20. Text Tool 🔤</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Add text to your artwork</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Size</strong>: 1.0-5.0x scaling</li>
+                                <li><strong>Style</strong>: Italic toggle</li>
+                                <li><strong>Real-time Preview</strong>: See text before placement</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Utility Tools</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">21. Symmetry Tool 🔄</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Modes</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>None</strong>: Standard drawing</li>
+                                <li><strong>Vertical</strong>: Mirror across vertical axis</li>
+                                <li><strong>Horizontal</strong>: Mirror across horizontal axis</li>
+                                <li><strong>Both</strong>: Four-way symmetry</li>
+                            </ul>
+                        </li>
+                        <li><strong>Visual Guides</strong>: On-screen symmetry lines</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">22. Layer Management 🎭</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Access</strong>: Layers dialog for complete layer control</li>
+                        <li><strong>Features</strong>:
+                            <ul class="list-disc ml-6">
+                                <li>Add/delete/duplicate layers</li>
+                                <li>Reorder by dragging</li>
+                                <li>Show/hide layers</li>
+                                <li>Adjust opacity (0-100%)</li>
+                                <li>Lock/unlock layers</li>
+                                <li>Blend modes (Normal, Multiply, Screen, Overlay, etc.)</li>
+                                <li>Merge layers up/down</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color & Palette System Section -->
     <section class="py-20 bg-gradient-to-br from-pixel-dark to-pixel-darker">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl text-center mb-16 text-retro-green">Animation Tools</h2>
+            <h2 class="text-4xl text-center mb-16 text-retro-green">🎨 Color & Palette System</h2>
             
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="pixel-border pixel-shadow rounded-lg overflow-hidden">
-                    <img src="images/screenshots/2.png" alt="Animation screenshot" class="w-full">
+            <h3 class="text-2xl mb-8 text-retro-pink">Color Palette</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Interactive Palette</strong>: Scrollable color selection</li>
+                <li><strong>Add Colors</strong>: Color picker with HEX, RGB, HSL input</li>
+                <li><strong>Edit Colors</strong>: Long-press existing colors to edit or delete</li>
+                <li><strong>Background Color</strong>: Separate canvas background color picker</li>
+                <li><strong>Premium Features</strong>: Unlimited colors (free version limited)</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Advanced Color Picker</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li><strong>Visual Picker</strong>: Hue/saturation/brightness selection</li>
+                <li><strong>Input Modes</strong>:
+                    <ul class="list-disc ml-6">
+                        <li><strong>HEX</strong>: #RRGGBB format</li>
+                        <li><strong>RGB</strong>: Red, Green, Blue (0-255)</li>
+                        <li><strong>HSL</strong>: Hue (0-360), Saturation/Lightness (0-100%)</li>
+                    </ul>
+                </li>
+                <li><strong>Real-time Preview</strong>: See color changes instantly</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Canvas & Display Options Section -->
+    <section class="py-20 bg-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-cyan">📐 Canvas & Display Options</h2>
+            
+            <h3 class="text-2xl mb-8 text-retro-pink">Canvas Border</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Preset Sizes</strong>: 16x16, 32x32, 64x64, 128x128</li>
+                <li><strong>Custom Size</strong>: Set exact width and height</li>
+                <li><strong>Visual Guide</strong>: Helps maintain working boundaries</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Pixel Borders</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Toggle</strong>: Show/hide grid lines between pixels</li>
+                <li><strong>Customization</strong>:
+                    <ul class="list-disc ml-6">
+                        <li>Border color selection</li>
+                        <li>Border width (0.5-5.0 pixels)</li>
+                        <li>Reset to defaults</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Zoom & Navigation</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li><strong>Zoom Range</strong>: 10% to 1000%</li>
+                <li><strong>Smooth Zoom</strong>: Pinch gestures or scroll wheel</li>
+                <li><strong>Pan</strong>: Click and drag in View mode</li>
+                <li><strong>Center View</strong>: Automatic canvas centering</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Animation Features Section -->
+    <section class="py-20 bg-gradient-to-br from-pixel-dark to-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-green">🎞️ Animation Features (Video Projects)</h2>
+            
+            <h3 class="text-2xl mb-8 text-retro-pink">Timeline Interface</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Frame Management</strong>: Visual frame thumbnails</li>
+                <li><strong>Playback Controls</strong>: Play, stop, frame navigation</li>
+                <li><strong>Frame Operations</strong>: Add, delete, duplicate, reorder</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Onion Skinning</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Previous Frame</strong>: Semi-transparent view of previous frame</li>
+                <li><strong>Next Frame</strong>: Preview of next frame</li>
+                <li><strong>Adjustable Opacity</strong>: Control ghost image visibility</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Animation Settings</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li><strong>Frame Rate</strong>: 1, 2, 4, 6, 12, 24, 30 FPS</li>
+                <li><strong>Frame Duration</strong>: Individual frame timing</li>
+                <li><strong>Playback</strong>: Smooth real-time preview</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Export Options Section -->
+    <section class="py-20 bg-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-cyan">💾 Export Options</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">1. Export as Project 💾</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Format</strong>: .pxlflux (native project format)</li>
+                        <li><strong>Includes</strong>: All layers, frames, settings, palette</li>
+                        <li><strong>Use Case</strong>: Save work for future editing</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">2. Export Image 🖼️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Format</strong>: PNG</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Spacing</strong>: Horizontal/vertical padding (0-50px)</li>
+                                <li><strong>Size Method</strong>: Canvas border or auto-bounds</li>
+                                <li><strong>Background</strong>: Transparent or colored</li>
+                                <li><strong>Resolution Multiplier</strong>: 1x to 10x scaling</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">3. Export GIF 🎬</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Format</strong>: Animated GIF</li>
+                        <li><strong>Options</strong>: Same as image export plus frame rate control</li>
+                        <li><strong>Use Case</strong>: Web animations, social media</li>
+                    </ul>
                 </div>
-                <ol class="space-y-4 text-gray-300" start="14">
-                    <li class="flex"><span class="text-retro-green mr-2">14.</span> <strong>Play/Stop</strong> – Preview your animation in real-time.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">15.</span> <strong>Toggle previous onion skin</strong> – See a ghosted version of the previous frame for smooth transitions.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">16.</span> <strong>Toggle next onion skin</strong> – Preview the upcoming frame over your canvas.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">17.</span> <strong>FPS count</strong> – Adjust animation speed in frames per second.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">18.</span> <strong>Duplicate frame</strong> – Copy your current frame to speed up animation creation.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">19.</span> <strong>Create new blank frame</strong> – Add a fresh empty frame for new motion.</li>
-                    <li class="flex"><span class="text-retro-green mr-2">20.</span> <strong>Timeline</strong> – Manage, reorder, or delete frames easily.</li>
-                </ol>
+                <div>
+                    <h4 class="text-xl text-retro-yellow mb-4">4. Export Current Frame 📷</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Export single frame from video project</li>
+                        <li><strong>Options</strong>: Same as image export</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">5. Export All Frames 🎞️</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Purpose</strong>: Export every frame as individual PNG files</li>
+                        <li><strong>Use Case</strong>: Frame-by-frame editing in other software</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">6. Export Sprite Sheet 🎮</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Format</strong>: PNG with multiple frames arranged in grid</li>
+                        <li><strong>Options</strong>:
+                            <ul class="list-disc ml-6">
+                                <li><strong>Columns/Rows</strong>: Grid layout configuration</li>
+                                <li><strong>Spacing</strong>: Between frames</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Case</strong>: Game development, texture atlases</li>
+                    </ul>
+                    <h4 class="text-xl text-retro-yellow mb-4 mt-8">7. Export Video 🎥</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Format</strong>: MP4</li>
+                        <li><strong>Options</strong>: Resolution, spacing, border options</li>
+                        <li><strong>Use Case</strong>: Social media, presentations, portfolios</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features Section -->
+    <section class="py-20 bg-gradient-to-br from-pixel-dark to-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-green">🔧 Advanced Features</h2>
+            
+            <h3 class="text-2xl mb-8 text-retro-pink">Undo/Redo System</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Unlimited History</strong>: Extensive undo/redo capability</li>
+                <li><strong>Action Grouping</strong>: Related actions grouped together</li>
+                <li><strong>Frame-aware</strong>: Maintains history per frame in animations</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Selection Transformations</h3>
+            <ul class="space-y-2 text-gray-300 mb-16">
+                <li><strong>Move</strong>: Pixel-precise positioning</li>
+                <li><strong>Rotate</strong>: 90° clockwise/counter-clockwise</li>
+                <li><strong>Flip</strong>: Horizontal/vertical mirroring</li>
+                <li><strong>Duplicate</strong>: Create copies with offset</li>
+            </ul>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Import Functionality</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li><strong>Project Import</strong>: Open existing .pxlflux files</li>
+                <li><strong>Pixel Import</strong>: Combine pixels from other projects</li>
+                <li><strong>Frame Selection</strong>: Choose specific frames from video projects</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pro Tips & Best Practices Section -->
+    <section class="py-20 bg-pixel-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16 text-retro-cyan">💡 Pro Tips & Best Practices</h2>
+            
+            <h3 class="text-2xl mb-8 text-retro-pink">Workflow Optimization</h3>
+            <ol class="space-y-2 text-gray-300 mb-16">
+                <li><span class="text-retro-yellow mr-2">1.</span> Start with View Mode to plan your composition</li>
+                <li><span class="text-retro-yellow mr-2">2.</span> Use Layers for complex artwork - separate elements for easy editing</li>
+                <li><span class="text-retro-yellow mr-2">3.</span> Save Frequently using the project export feature</li>
+                <li><span class="text-retro-yellow mr-2">4.</span> Utilize Symmetry for balanced designs</li>
+                <li><span class="text-retro-yellow mr-2">5.</span> Master Keyboard Shortcuts for faster workflow</li>
+            </ol>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Animation Tips</h3>
+            <ol class="space-y-2 text-gray-300 mb-16">
+                <li><span class="text-retro-yellow mr-2">1.</span> Use Onion Skinning for smooth motion between frames</li>
+                <li><span class="text-retro-yellow mr-2">2.</span> Start with Keyframes then add in-between frames</li>
+                <li><span class="text-retro-yellow mr-2">3.</span> Maintain Consistent Framerate for smooth playback</li>
+                <li><span class="text-retro-yellow mr-2">4.</span> Use the Timeline to organize complex animations</li>
+            </ol>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Color Management</h3>
+            <ol class="space-y-2 text-gray-300 mb-16">
+                <li><span class="text-retro-yellow mr-2">1.</span> Build a Palette before starting major work</li>
+                <li><span class="text-retro-yellow mr-2">2.</span> Use Gradients for professional shading effects</li>
+                <li><span class="text-retro-yellow mr-2">3.</span> Experiment with Blend Modes for interesting layer effects</li>
+                <li><span class="text-retro-yellow mr-2">4.</span> Save Custom Gradients for consistent styling</li>
+            </ol>
+
+            <h3 class="text-2xl mb-8 text-retro-pink">Export Recommendations</h3>
+            <ul class="space-y-2 text-gray-300">
+                <li><strong>Web Use</strong>: PNG with transparent background</li>
+                <li><strong>Print</strong>: High resolution multiplier (4x-8x)</li>
+                <li><strong>Animation</strong>: GIF for web, MP4 for video platforms</li>
+                <li><strong>Game Assets</strong>: Sprite sheets with proper spacing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="py-20 bg-gradient-to-br from-pixel-dark to-pixel-darker">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                <strong>PixelFlux</strong> combines professional-grade features with an intuitive interface, making it the perfect tool for pixel artists of all skill levels. With practice and exploration of these tools, you'll be creating stunning pixel art and animations in no time!
+            </p>
         </div>
     </section>
 
@@ -238,7 +802,7 @@
         <div class="container mx-auto px-6 text-center">
             <div class="text-2xl md:text-2xl mb-4 leading-tight">
                 <span class="text-retro-purple">Pixel</span><span class="text-retro-pink">Flux</span>
-                </div>
+            </div>
             <p class="text-gray-400 mb-8">Create. Share. Inspire.</p>
             
             <div class="flex justify-center space-x-8 mb-8">
@@ -250,37 +814,5 @@
             <p class="text-gray-500 text-sm">© 2025 PixelFlux. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Mobile Menu Script -->
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Hamburger menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links.md\\:hidden');
-            
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-
-            // Close mobile menu when a link is clicked
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>
